@@ -5,7 +5,7 @@ def printSymble(): # function print symble
 
     global emni_variable
     s = ''
-    if emni_variable % 2 ==0:
+    if emni_variable % 2 == 0:
         s += '('
 
     s += '-' * 70
