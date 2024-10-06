@@ -1,15 +1,19 @@
 from time import sleep
 
+"""
+NOTE: Ekhane code e sundor dekhanor jnno kichu funtion and text add korechi.
+
+egula bade Code Module er moto kore korechi.....
+
+"""
+
 emni_variable = 0
 def printSymble(): # function print symble
-
     global emni_variable
     s = ''
-    if emni_variable % 2 == 0:
+    if not emni_variable % 2:
         s += '('
-
     s += '-' * 70
-
     if emni_variable % 2:
         s += ')'
 
