@@ -3,21 +3,12 @@ print("Hello, World!");
 
 let CartItems = [];
 
-document.addEventListener("DOMContentLoaded", () => {
-    const savedCart = sessionStorage.getItem("cartItems");
-    CartItems = savedCart ? JSON.parse(savedCart) : [];
-});
-
-function clearCart() {
-    CartItems = [];
-    sessionStorage.removeItem("cartItems"); // Removes from session storage
-}
-
 const addItem = async (product_id) => {
     print("addItem CLiked");
 
     if (CartItems.length > 10) {
-        alert("You cannot add more than 11 items to your cart.");
+        toastr.error("You cannot add more than 11 items to your cart.");
+        // alert("You cannot add more than 11 items to your cart.");
         return;
     }
     toastr.success("Your item has been added to the cart!");
@@ -42,7 +33,9 @@ const showCart = () => {
     if (CartItems.length == 0) {
         cart_msg.textContent = "Empty Cart"; // empty cart
     } else {
-        cart_msg.textContent = `Your Cart: ${CartItems.length}`; // empty cart
+        cart_msg.textContent = `Your Cart: ${CartItems.length} Item${
+            CartItems.length > 1 ? "s" : ""
+        }`;
     }
 
     let curts = document.querySelector("#carts");
@@ -83,6 +76,7 @@ const clickedDetails = async (product_id) => {
 };
 
 const updateProductInfo = (Product) => {
+    print("updateProductInfo");
     const div = document.querySelector("#showProductInfo");
     div.innerHTML = `
         <div class="modal-header">
@@ -172,15 +166,13 @@ const ProccesingInputForProducts = async (input_value) => {
     resultsh1.textContent = `Results for '${input_value}' Products`;
 };
 
-const SearchButtonAction = () => {
-    print("Search Button Action");
+const SearchButtonAction = (event) => {
+    event.preventDefault();
+    console.log("Search Button Action");
 
     window.scrollTo(0, 0);
     let old_products = document.querySelector(".showing-products");
     old_products.innerHTML = "";
-    while (old_products.firstChild) {
-        old_products.removeChild(old_products.firstChild);
-    }
     const input = document.querySelector(".form-control");
     input_value = input.value;
     input.value = "";
