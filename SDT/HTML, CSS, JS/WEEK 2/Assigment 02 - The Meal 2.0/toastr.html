@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toastr Notification Example</title>
+    <!-- jQuery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <!-- Toastr -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <!-- Styles -->
+    <style>
+        body {
+            background: whitesmoke;
+            text-align: center;
+        }
+        button {
+            background-color: darkslategrey;
+            color: white;
+            border: 0;
+            font-size: 18px;
+            font-weight: 500;
+            border-radius: 7px;
+            padding: 10px 10px;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Toastr Notification Example</h1>
+        <button id="notifyBtn">Notify Success</button>
+    </div>
+
+    <script>
+        // Default Toastr Configuration
+        $(document).ready(function() {
+            toastr.options = {
+                'closeButton': true,
+                'debug': false,
+                'newestOnTop': false,
+                'progressBar': false,
+                'positionClass': 'toast-top-right', // Change position if needed
+                'preventDuplicates': false,
+                'showDuration': '1000',
+                'hideDuration': '1000',
+                'timeOut': '5000',
+                'extendedTimeOut': '1000',
+                'showEasing': 'swing',
+                'hideEasing': 'linear',
+                'showMethod': 'fadeIn',
+                'hideMethod': 'fadeOut',
+            };
+        });
+
+        // Function to Show Notification
+        function showSuccessNotification() {
+            toastr.success('Your action was successful!');
+        }
+
+        // Event Listener for Button Click
+        $('#notifyBtn').click(function() {
+            showSuccessNotification(); // Call the function
+        });
+    </script>
+</body>
+</html>
