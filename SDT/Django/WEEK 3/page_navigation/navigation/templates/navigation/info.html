@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Info</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-pink-50 flex flex-col items-center justify-center">
+    <!-- Navigation Bar -->
+    <div class="text-pink-600 text-lg font-semibold text-center py-4 bg-white shadow-lg rounded-full p-10 m-10 border border-pink-200">
+        <a href="/home" class="hover:text-pink-800 transition px-2">Home</a>
+        <a href="/contect" class="hover:text-pink-800 transition px-2">Contact</a>
+        <a href="/about" class="hover:text-pink-800 transition px-2">About</a>
+        <a href="/info" class="hover:text-pink-800 transition px-2">Employee Info</a>
+    </div>
+
+    <!-- Main Content -->
+    <h1 class="text-center text-pink-700 text-3xl font-extrabold">Welcome to the Employee Info Page!</h1>
+
+    <!-- Person Info -->
+    <div class="overflow-x-auto">
+        <table class="border border-black mt-5 w-full">
+            <tr>
+                <th class="border border-black px-10 py-2">Id</th>
+                <th class="border border-black px-10 py-2">Name</th>
+                <th class="border border-black px-10 py-2">Age</th>
+                <th class="border border-black px-10 py-2">Occupation</th>
+                <th class="border border-black px-10 py-2">Email</th>
+                <th class="border border-black px-10 py-2">Location</th>
+            </tr>
+            
+                {% for info in person_info %}
+                <tr>
+                    <td class="border border-black px-5 py-2 text-center">{{info.id}}</td>
+                    <td class="border border-black px-5 py-2 text-center">{{info.data.name}}</td>
+                    <td class="border border-black px-5 py-2 text-center">{{info.data.age}}</td>
+                    <td class="border border-black px-5 py-2 text-center">{{info.data.occupation}}</td>
+                    <td class="border border-black px-5 py-2 text-center">{{info.data.contact.email}}</td>
+                    <td class="border border-black px-5 py-2 text-center">{{info.data.location.city}}, {{info.data.location.state}}, {{info.data.location.country}}</td>
+                </tr>
+                {% endfor %}
+        </table>
+    </div>
+
+    <div class="mb-10"></div>
+    
+    
+</body>
+</html>
