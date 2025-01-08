@@ -1,0 +1,61 @@
+body {
+    background-color: red;
+    margin: 0;
+    padding: 0;
+}
+
+.custom-box-size {
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(255, 255, 255, 0.5);
+    width: 50%;
+    height: auto;
+    overflow: hidden;
+    border-radius: 3%;
+    padding: 20px;
+}
+
+.form-submit-btn {
+    background-color: #262826;
+    font-weight: bolder;
+    font-size: 200%;
+    color: aqua;
+    height: 50px;
+    width: 80%;
+    max-width: 300px;
+}
+
+.form-submit-btn:hover {
+    background-color: #506351;
+    transform: scale(1.25);
+    transition: transform 0.5s;
+}
+
+.form-submit-btn:not(:hover) {
+    transform: scale(1);
+    transition: transform 0.5s;
+}
+
+@media (max-width: 768px) {
+    .custom-box-size {
+        width: 80%;
+        padding: 10px;
+    }
+
+    .form-submit-btn {
+        font-size: 150%;
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+    .custom-box-size {
+        width: 90%;
+        padding: 5px;
+    }
+
+    .form-submit-btn {
+        font-size: 120%;
+        width: 100%;
+    }
+}
