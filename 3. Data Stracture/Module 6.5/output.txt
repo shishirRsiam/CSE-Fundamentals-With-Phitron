@@ -1,0 +1,34 @@
+void p_list(Node* head)
+{
+    Node* tmp=head;
+    int cnt=0;
+    cout<<"Linked List: ";
+    while(tmp!=NULL)
+    {
+        cnt++;
+        cout<<tmp->vall<<" ";
+        tmp=tmp->next;
+    }
+    cout<<endl<<"Linked List Count: "<<cnt<<endl;
+    int loops = cnt/2;
+    tmp=head;
+    for(int i=1;i<cnt;i++)
+    {
+        if(i!=loops) 
+        {
+            tmp=tmp->next;
+        }
+        else
+        {
+            cout<<"Middle Element: ";
+            if(cnt%2==1) // cnt jodi odd 
+            {
+                cout<<tmp->next->vall<<" ";
+            }
+            else //cnt jodi even
+            {
+                cout<<tmp->vall<<" "<<tmp->next->vall;
+            }
+        }
+    }
+}

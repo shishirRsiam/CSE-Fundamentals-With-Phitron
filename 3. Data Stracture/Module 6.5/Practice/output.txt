@@ -1,0 +1,19 @@
+You Select: 10
+You're Wrong Option Selected! Follow The Options!
+You Select: 20
+You're Wrong Option Selected! Follow The Options!
+You Select: 30
+You're Wrong Option Selected! Follow The Options!
+You Select: -1
+You're Wrong Option Selected! Follow The Options!
+You Select: 7
+You're Wrong Option Selected! Follow The Options!
+You Select: 1
+Your Linked List: 
+Your Linked List Print Successfull.
+You Select: 40
+You're Wrong Option Selected! Follow The Options!
+You Select: 5
+Enter The Position: Head is Emty This Note!
+You Select: 4
+Enter The Position: Enter The Vallue: 
