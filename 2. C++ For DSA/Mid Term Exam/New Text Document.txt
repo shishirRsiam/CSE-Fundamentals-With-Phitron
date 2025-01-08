@@ -1,0 +1,8 @@
+Mid Term Exam for DSA:
+
+1. Sort It - https://ideone.com/MrMnAB
+2. Sort It 2 - https://ideone.com/x0h5Q7
+3. Monkey - https://ideone.com/pzsT0T (String)
+3.2 Monkey - https://ideone.com/yi3ghP (Char)
+4. Who Is It - https://ideone.com/G8IWGw
+5. Choose Three - https://ideone.com/0wAgbT
