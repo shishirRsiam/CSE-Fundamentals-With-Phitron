@@ -1,0 +1,6 @@
+1 alice
+2 and
+3 bob
+4 are
+5 playing
+5
