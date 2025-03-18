@@ -1,1 +1,4 @@
 18-03-2025 20:51:41  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
+18-03-2025 20:52:21  339  git commit -am"Add CSE Fundamentals With Phitron Fall 2023 Certificate"
+18-03-2025 20:52:30  340  git push
+18-03-2025 20:56:51  341  git add .
