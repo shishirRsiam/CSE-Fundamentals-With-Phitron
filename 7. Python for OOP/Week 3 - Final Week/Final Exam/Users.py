@@ -46,7 +46,7 @@ class Customer(User):
             self.transaction_history.append(f'WITHDRAWN: {amount} | CURRENT: {self.balance}')
     
     def view_balance(self):
-        print(f'Your current balance is {self.balance}.')
+        print(f'Your current balance is: ${self.balance}')
 
     def view_transaction_history(self):
         print("\n" + "="*40)
@@ -113,17 +113,16 @@ class Admin(User):
 
         for user in self.bank.users:
             print(f"""
-            {'='*50}
-            Name:           {user.name}
-            Email:          {user.email}
-            Balance:        {user.balance}
-            Account Number: {user.account_number}
-            Loan Amount:    {user.loan_amount}
-            {'='*50}
+{'='*50}
+Name:           {user.name}
+Email:          {user.email}
+Balance:        {user.balance}
+Account Number: {user.account_number}
+Loan Amount:    {user.loan_amount}
+{'='*50}
             """)
         print("-"*50) 
 
-        
     def view_total_balance(self):
         print("Total balance of the bank:", self.bank.balance)
     

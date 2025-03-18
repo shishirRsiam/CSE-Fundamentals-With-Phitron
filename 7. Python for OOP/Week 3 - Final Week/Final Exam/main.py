@@ -3,7 +3,9 @@ from Bank import Bank
 from Users import Customer, Admin
 
 def display_menu():
-    print("\n================================================")
+    print('\n\n\n')
+    print('🔥'*25)
+    print("================================================")
     print("      Welcome to the Sishir's Bank System   ")
     print("================================================")
     print("Banking Operations:")
@@ -49,14 +51,14 @@ def main():
     while True:
         display_menu()
         n = int(input("Enter an option: "))
-        print("\n\n")
+        print("\n")
         time.sleep(1)
         if n == 1:
-            dep = int(input("Enter deposit amount: "))
-            shishir.deposit(dep)
+            deposit = int(input("Enter deposit amount: "))
+            shishir.deposit(deposit)
         elif n == 2:
-            draw = int(input("Enter withdraw amount: "))
-            shishir.withdraw(draw)
+            withdraw = int(input("Enter withdraw amount: "))
+            shishir.withdraw(withdraw)
         elif n == 3:
             shishir.view_balance()
         elif n == 4:
@@ -76,15 +78,16 @@ def main():
         elif n == 10:
             adminSishir.view_total_loan()
         elif n == 11:
-            decision = input("Enter decision (y / n): ")
+            decision = input("Do you want to switch loan feature? (y / n): ")
             if decision == 'y':
                 adminSishir.switch_loan_feature(True)
             else:
                 adminSishir.switch_loan_feature(False)
         elif n == 12:
-            print("Goodbye!")
+            print("Thank you for using our services!")
             break
-        
+
+        print('✅'*25)
         time.sleep(2)
 
 main()

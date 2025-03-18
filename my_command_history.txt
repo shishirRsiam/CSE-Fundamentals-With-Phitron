@@ -1,0 +1,1 @@
+18-03-2025 20:51:41  337  PROMPT_COMMAND='echo "$(date +"%d-%m-%Y %H:%M:%S") $(history 1)" >> ./my_command_history.txt'
