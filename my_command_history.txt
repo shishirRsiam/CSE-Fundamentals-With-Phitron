@@ -10,3 +10,6 @@
 10-06-2025 17:04:29  397  git commit -am "update Assigment 2 file name"
 10-06-2025 17:04:33  398  git push
 10-06-2025 17:16:04  399  git add .
+10-06-2025 17:16:13  400  git commit -am "update Assigment 3 file name"
+10-06-2025 17:16:21  401  git push
+10-06-2025 17:35:00  402  git add .
