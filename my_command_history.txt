@@ -4,3 +4,6 @@
 18-03-2025 20:56:51  341  git add .
 10-06-2025 16:55:24  392  "New Terminal"
 10-06-2025 16:55:27  393  git add .
+10-06-2025 16:55:38  394  git commit -am "update Assigment 1 file name"
+10-06-2025 16:55:43  395  git push
+10-06-2025 17:04:23  396  git add .
