@@ -1,0 +1,5 @@
+29-09-2025 12:43:42   29  python train_model.py 
+29-09-2025 12:51:37   29  python train_model.py 
+29-09-2025 12:51:39   30  g++ --version
+29-09-2025 12:52:18   31  g++ try.cpp -o try
+29-09-2025 12:52:40   32  "/c/ProgramData/chocolatey/lib/mingw/tools/install/mingw64/bin/g++" --version
